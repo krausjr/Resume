@@ -4,16 +4,21 @@ body{
 
 .logo{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: 300%;
+    font-size: 3rem;
     font-style: italic;
 }
 
 .item{
-    display:flex;
+    display: flex;
     flex-direction: row;
     height: 1rem;
     padding: 1rem;
     margin: .5rem;
+}
+
+#action-btn {
+    padding: 1rem;
+    margin: 1rem;
 }
 
 /* FLEX BOX */
