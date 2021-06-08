@@ -1,3 +1,7 @@
+body{
+    text-align: center;
+}
+
 .logo{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 300%;
@@ -5,11 +9,11 @@
 }
 
 .item{
-    text-decoration: none;
-    width: 50px;
-    height: 50px;
-    padding: 15px;
-    margin: 15px;
+    display:flex;
+    flex-direction: row;
+    height: 1rem;
+    padding: 1rem;
+    margin: .5rem;
 }
 
 /* FLEX BOX */
@@ -19,7 +23,6 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    flex-grow: 1;
     background: linear-gradient(lightblue, rgb(36, 36, 233));
     padding: .5rem;
     
