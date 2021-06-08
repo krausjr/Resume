@@ -27,8 +27,11 @@
 
 /* MEDIA QUERIES */
 
-@media screen and min-width(800px) {
-    #banner{
-        flex-direction: column;
+
+/* On Screens smaller than 760px */
+
+@media screen and (max-width: 600px) {
+    .banner{
+        background: linear-gradient(orange, red)
     }
 }
