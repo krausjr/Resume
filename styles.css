@@ -1,4 +1,4 @@
-body{
+.page-content{
     text-align: center;
 }
 
@@ -8,9 +8,10 @@ body{
     font-style: italic;
 }
 
-.item{
+.main-nav{
+    list-style-type: none;
     display: flex;
-    flex-direction: row;
+    flex-grow: 1;
     height: 1rem;
     padding: 1rem;
     margin: .5rem;
@@ -21,18 +22,38 @@ body{
     margin: 1rem;
 }
 
-/* FLEX BOX */
+a {
+    color: black;
+    text-decoration: none;
+}
+
+footer {
+    box-sizing: border-box;
+    color: white;
+    background-color: rgb(65, 65, 65);
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+
+
+/* BASE LAYOUT */
+
+body {
+    display: flex;
+    flex direction: column;
+    min-height: 100vh;
+}
 
 .banner{
     box-sizing: border-box;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    background: linear-gradient(lightblue, rgb(36, 36, 233));
-    padding: .5rem;
-    
+    box-shadow: 5px 2px 50px rgb(170, 170, 170);
+    background: linear-gradient(rgb(238, 238, 238), rgb(204, 204, 204));
+    padding: 1rem;
+    margin: -.5rem;    
 }
-
 
 /* MEDIA QUERIES */
 
@@ -40,7 +61,31 @@ body{
 /* On Screens smaller than 600px */
 
 @media screen and (max-width: 600px) {
-    .banner{
-        background: linear-gradient(orange, red)
+    .banner {
+        background: linear-gradient(orange, red);
+        display: flex;
+    }
+    .main-nav {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+/* On Screens 600px to 1000px */
+
+@media screen and (min-width: 601px) and (max-width: 1000px) {
+    .banner {
+        display: flex;
+        flex-grow: 1;
+        justify-content: space-between;
+    }
+}
+
+/* On screens larger than 1000px */
+
+@media screen and (min-width: 1001px) {
+    .banner {
+        display: flex;
+        justify-content: space-between;
     }
 }
