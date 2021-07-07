@@ -1,5 +1,5 @@
 .logo{
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: "Avenir Next", "Avenir", sans-serif;
     font-size: 2rem;
     font-style: italic;
 }
@@ -103,5 +103,12 @@ footer {
         list-style: none;
         display: flex;
         flex-direction: row;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .hamburger,
+    .toggle {
+        visibility: hidden;
     }
 }
