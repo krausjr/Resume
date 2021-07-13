@@ -1,5 +1,5 @@
 .logo{
-    font-family: "Avenir Next", "Avenir", sans-serif;
+    font-family: 'Titillium Web', sans-serif;
     font-size: 2rem;
     font-style: italic;
 }
@@ -52,13 +52,9 @@ a {
 
 /* BODY STYLES */
 
-body {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-}
-
 .page-content{
+    display: block;
+    align-content: center;
     text-align: center;
 }
 
