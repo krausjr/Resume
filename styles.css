@@ -1,6 +1,6 @@
 .logo{
     font-family: 'Titillium Web', sans-serif;
-    font-size: 2rem;
+    font-size: 5vw;
     font-style: italic;
 }
 
@@ -8,6 +8,7 @@ a {
     color: black;
     text-decoration: none;
 }
+
 
 /* BASE LAYOUT */
 
@@ -18,16 +19,17 @@ a {
     box-shadow: 5px 2px 50px rgb(170, 170, 170);
     background: linear-gradient(rgb(238, 238, 238), rgb(204, 204, 204));
     padding: 1rem;
-    margin: -.5rem;    
+    margin: -.5rem;
+    overflow-x: clip;
+    overflow-y: visible;
 }
 
 /* BODY STYLES */
 
-.page-content{
+.page-content {
     display: block;
     align-content: center;
     text-align: center;
-    overflow: hidden;
 }
 
 #action-btn {
@@ -46,6 +48,14 @@ footer {
     bottom: 0;
     width: 100%;
     text-align: center;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin: 1rem;
+    overflow: hidden;
 }
 
 /* MEDIA QUERIES */
