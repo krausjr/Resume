@@ -4,15 +4,10 @@
     font-style: italic;
 }
 
-
-
 a {
     color: black;
     text-decoration: none;
 }
-
-
-
 
 /* BASE LAYOUT */
 
@@ -26,36 +21,13 @@ a {
     margin: -.5rem;    
 }
 
-/* NAV MENU */
-
-#menu-nav {
-    list-style: none;
-    margin-left: 0;
-    padding-left: 0;
-    display: flex;
-    flex-direction: column;
-}
-
-#menu-nav li {
-    display: block;
-    text-align: right;
-    padding: .5rem;
-}
-
-#menu-nav li a {
-    padding: 6px 12px;
-    border-bottom: 2px solid red;
-    width: 100%;
-    display: block;
-    color: white;
-}
-
 /* BODY STYLES */
 
 .page-content{
     display: block;
     align-content: center;
     text-align: center;
+    overflow: hidden;
 }
 
 #action-btn {
@@ -106,5 +78,9 @@ footer {
     .hamburger,
     .toggle {
         visibility: hidden;
+    }
+    .tablet-menu ul {
+        display: flex;
+        flex-direction: row;
     }
 }
