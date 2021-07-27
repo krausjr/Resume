@@ -10,13 +10,13 @@
         <link href="https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="/users/jameskraus/desktop/coach/styles.css">
         <link rel="stylesheet" href="/users/jameskraus/desktop/coach/menu.css">
+        <link rel="stylesheet" href="/users/jameskraus/desktop/coach/modal.css">
         <script defer src="../scripts.js"></script>
         <title>BOOST</title>
     </head>
    
     <header class="banner">
         <h1 class="logo"><a href="#">BOOST training systems</a></h1>
-        <div class="tablet-menu">
             <div class="menu-wrap">
                 <input type="checkbox" class="toggle">
                 <div class="hamburger"><div></div></div>
@@ -26,20 +26,47 @@
                         <a href="trainingplans.html"><li>Training Plans</li></a>
                         <a href="performanceblog.html"><li>Performance Blog</li></a>
                     </ul>  
-                </div>                
+                </div>               
             </div>
-        </div>
     </header>
     
     <main class="page-content">
+        <h1>Need a boost?</h1>
+        <h3>Boost training systems combines experience and analytics to currate a plan that can help you reach your goals.</h3>
+        <h3>Whether you want to win the big race, set a new PR, or simply improve your lifestyle habits, we can give you a boost.</h3>
             <br>
-            <p>Lifestyle</p>
-            <p>Performance</p>
-            <p><button id="action-btn">Schedule a Meeting</button></p>
+            <div class="container">
+                <p>Boost your Lifestyle</p>
+                <p>Boost your Performance</p>
+            </div>
+            <button class="action-btn">Schedule a Consultation</button>    
     </main>
+
+    <div class="modal" id="email-modal" >
+        <div class="modal-box">
+            <span class="close-btn">&times;</span>
+                
+                <form action="/" method="GET" class="modal-form" id="form">
+                    <h1>Schedule a consultation <br> by filling out the information below.</h1>
+                    <div class="form-validation">
+                        <input type="text" class="modal-input" id="name" name="name" placeholder="Enter your name">
+                        <p>Error Message</p>
+                    </div>
+                    <div class="form-validation">
+                        <input type="email" class="modal-input" id="email" name="email" placeholder="Enter your email address">
+                        <p>Please enter a valid email address</p>
+                    </div>
+                    <div class="form-validation">
+                    <textarea class="modal-input" id="bio" name="Bio" placeholder="Breifly describe your goals and cycling experience"></textarea>
+                        <p>Please tell me something about yourself</p>
+                    </div>
+                    <input type="submit" class="modal-input-btn" value="submit">
+                </form>
+        </div>
+    </div>
     
     <footer>
-        <h3 class="footer">BOOST training systems LLC</h3>
+        <h4 class="footer">BOOST training systems LLC</h3>
     </footer>
   
 </html>

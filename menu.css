@@ -11,11 +11,11 @@
 
 .menu-wrap .toggle {
     position: absolute;
-    right: 12px;
+    right: 13px;
     z-index: 3;
     cursor: pointer;
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
     padding: 1rem;
     display: flex;
     align-items: center;
@@ -27,11 +27,11 @@
 
 .menu-wrap .hamburger {
     position: absolute;
-    top: -10px;
+    top: -15px;
     right: 0;
     z-index: 2;
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
     padding: 1rem;
     background: transparent;
     display: flex;
@@ -74,19 +74,19 @@
 /* Animates line movement */
 
 .menu-wrap .toggle:checked + .hamburger > div {
-    transform: rotate(135deg);
+    transition: 0.3s ease;
 } 
 
 /* Hamburger lines become X */
 
-.menu-wrap .toggle:checked + .hamburger > div {
-    transform: rotate(135deg);
+.menu-wrap .toggle:checked + .hamburger > div:before {
+    transform: translateY(10px) rotate(45deg);
+    transition: 0.3s ease-out;
 }
 
-.menu-wrap .toggle:checked + .hamburger > div:before,
 .menu-wrap .toggle:checked + .hamburger > div:after {
-    top: 0;
-    transform: rotate(90deg);
+    transform: translateY(-10px) rotate(-45deg);
+    transition: 0.3s ease-out;
 }
 
 /* Menu styling */
@@ -99,7 +99,7 @@
 .menu-wrap ul li {
     display: flex;
     font-family: "Avenir Next", "Avenir", sans-serif;
-    padding: 2rem;
+    margin: 2rem;
 }
 
 .menu a:hover {
