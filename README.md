@@ -1,4 +1,4 @@
-# coach
+# Boost Training Systems
 This project is an online business page for James Kraus's coaching business.
 
 This page meets the following requirements: CSS animation, responsive navigation menu, media queries for small and large screens,
