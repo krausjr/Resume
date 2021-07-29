@@ -14,7 +14,6 @@
 
 .modal-form {
     padding: 1rem;
-
 }
 
 .modal-form h1 {
@@ -28,7 +27,7 @@
     background: white;
     margin: 10% auto;
     width: 60%;
-    box-shadow: 0 5px 8px 0 black;
+    box-shadow: 0 5px 8px 0 gray;
     position: relative;
     border-radius: 5px;
     min-height: 400px;
@@ -39,10 +38,10 @@
     display: inline-block;
     border-radius: 2px;
     outline: none;
-    border: none;
+    border: lightslategray;
     height: 2rem;
-    width: 123%;
-    box-shadow: 1px 1px 1px black;
+    width: 99%;
+    box-shadow: 1px 1px 1px gray;
 }
 
 .modal-input::placeholder {
@@ -60,6 +59,11 @@
     color: white;
     background-color: lightskyblue;
     font-size: 1rem;
+}
+
+.modal-input-btn:hover {
+    background-color: rgb(19, 127, 194);
+    transition: 0.2s ease;
 }
 
 .close-btn {
@@ -85,33 +89,39 @@
 
 .form-validation {
     margin-bottom: 0.5rem;
-    width: 80%;
+    width: auto;
 }
 
 .form-validation.error {
     margin-bottom: 1.5rem;
     position: relative;
-    border: 1px solid red;
+    border: 2px solid rgb(250, 69, 69);
     border-radius: 2px;
 }
 
 .form-validation.valid {
-    margin-bottom: 1.5rem;
     position: relative;
-    border: 1px solid green;
+    border: 2px solid rgb(65, 192, 65);
     border-radius: 2px;
 }
 
 .form-validation p {
     font-size: 0.7rem;
-    margin-top: 0.5rem;
+    margin-top: 0.25rem;
     color: red;
     position: absolute;
-    top: 1.8rem;
+    display: none;
+}
+
+.submission h4 {
     display: none;
 }
 
 .form-validation.error p {
+    display: block;
+}
+
+.valid-submission {
     display: block;
 }
 

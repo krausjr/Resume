@@ -20,7 +20,7 @@ window.addEventListener('click', (e) => {
 
 //form validation
 const form = document.getElementById('form');
-const name = document.getElementById('name');
+const yourName = document.getElementById('name');
 const email = document.getElementById('email');
 const bio = document.getElementById('bio');
 
@@ -34,21 +34,11 @@ function showError(input, message) {
 }
 
 //show valid message
-function showValid(input) {
+function showValid(input, message) {
     const formValidation = input.parentElement;
     formValidation.className = 'form-validation valid';
 }
 
-//check required fields
-function checkRequired(inputArr) {
-    input.Arr.forEach(function(input) {
-        if(input.value.trim() === '') {
-            showError(input, `${getFieldName(input)} is required`);
-        } else {
-            showValid(input); 
-        }
-    })
-}
 
 //Check required fields
 function checkRequired(inputArr) {
@@ -63,12 +53,13 @@ function checkRequired(inputArr) {
 
 //Get fieldname
 function getFieldName(input) {
-    return input.name.charAt(0).toUppercase() + input.name.slice(1);
+    return input.name;
 }
 
 //event listeners
 form.addEventListener('submit', (e) => {
     e.preventDefault();
 
-    checkRequired([name, email, bio]);
+    checkRequired([yourName, email, bio]);
+
 })
