@@ -42,13 +42,16 @@ function showValid(input, message) {
 
 //Check required fields
 function checkRequired(inputArr) {
+    let isValid = true;
     inputArr.forEach(function(input) {
         if(input.value.trim() === '') {
             showError(input, `${getFieldName(input)} is required`);
+            isValid = false;
         } else {
             showValid(input);
         }
     })
+    return isValid;
 }
 
 //Get fieldname
@@ -60,6 +63,11 @@ function getFieldName(input) {
 form.addEventListener('submit', (e) => {
     e.preventDefault();
 
-    checkRequired([yourName, email, bio]);
+    const isValid = checkRequired([yourName, email, bio]);
 
+    if (isValid) {
+        
+        modal.style.display = 'none'
+        window.alert(`Thanks ${yourName.value}, we will contact you soon!`)
+    }
 })
