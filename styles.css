@@ -171,9 +171,13 @@ footer {
         display: flex;
         flex-direction: row;
     }
+}
 
 @media screen and (min-width: 1000px) {
+
     .page-content h1 {
         font-size: 6rem;
     }
 }
+        
+    
